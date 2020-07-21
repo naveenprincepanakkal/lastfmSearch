@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Album Search</string>
+    <string name="search_hint">Search</string>
+    <string name="search">Search</string>
+    <string name="album">Album</string>
+    <string name="artist">Artist</string>
+    <string name="song">Song</string>
+</resources>
