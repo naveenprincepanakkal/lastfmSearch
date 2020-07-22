@@ -1,8 +1,9 @@
 # Lastfm Search 
 
-1. Show artist, album or songs details from https://www.last.fm
-2. User can search artist, album or songs
-3. Lazy loads the images
+1. Project is done using MVVM pattern
+2. Show artist, album or songs details from https://www.last.fm
+3. User can search artist, album or songs
+4. Lazy loads the images
 
 
 # Third Party Libaray uses
