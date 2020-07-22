@@ -7,6 +7,10 @@ import poc.naveen.com.search.data.model.tracksearch.TrackSearch
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+/**
+ * Created by Naveen on 21-07-2020
+ */
+
 interface ApiService {
 
     @GET("?method=album.search" + "&api_key=" + ApiProvider.API_KEY + ApiProvider.FORMAT_JSON)

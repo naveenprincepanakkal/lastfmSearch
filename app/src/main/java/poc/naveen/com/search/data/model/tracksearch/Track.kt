@@ -1,14 +1,12 @@
 package poc.naveen.com.search.data.model.tracksearch
 
 
-import android.annotation.SuppressLint
 import com.google.gson.annotations.SerializedName
-import kotlinx.android.parcel.Parcelize
-import android.os.Parcelable
 import poc.naveen.com.search.data.model.Image
 
-@SuppressLint("ParcelCreator")
-@Parcelize
+/**
+ * Created by Naveen on 21-07-2020.
+ */
 data class Track(
     @SerializedName("artist")
     val artist: String = "",
@@ -24,4 +22,4 @@ data class Track(
     val streamable: String = "",
     @SerializedName("url")
     val url: String = ""
-) : Parcelable
+)

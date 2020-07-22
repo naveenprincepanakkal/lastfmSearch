@@ -5,6 +5,10 @@ import poc.naveen.com.search.data.model.albumsearch.AlbumSearch
 import poc.naveen.com.search.data.model.artistsearch.ArtistSearch
 import poc.naveen.com.search.data.model.tracksearch.TrackSearch
 
+/**
+ * Created by Naveen on 21-07-2020.
+ */
+
 class ApiServiceImpl : ApiService {
 
     private val retrofit = ApiProvider.create()

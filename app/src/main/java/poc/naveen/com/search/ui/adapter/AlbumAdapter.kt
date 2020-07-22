@@ -6,15 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.album_list_item.view.*
 import poc.naveen.com.search.R
-import poc.naveen.com.search.data.model.albumsearch.Album
 import poc.naveen.com.search.data.model.Image
+import poc.naveen.com.search.data.model.albumsearch.Album
 
-class AlbumAdapter(private val albums: ArrayList<Album>) :
+/**
+ * Created by Naveen on 21-07-2020.
+ */
+
+class AlbumAdapter(private val albums: ArrayList<Album>, val adapterOnClick: (Album) -> Unit) :
     RecyclerView.Adapter<AlbumAdapter.AlbumViewHolder>() {
 
     private lateinit var context: Context
@@ -50,8 +53,7 @@ class AlbumAdapter(private val albums: ArrayList<Album>) :
             .into(holder.image);
 
         holder.itemView.setOnClickListener { v ->
-            Toast.makeText(holder.itemView.context, "Position : $position", Toast.LENGTH_SHORT)
-                .show()
+            adapterOnClick(album)
         }
     }
 
